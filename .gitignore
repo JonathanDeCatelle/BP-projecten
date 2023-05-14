@@ -1,0 +1,18 @@
+# React Native
+node_modules/
+npm-debug.log
+/android/app/build/
+/android/gradle/
+/ios/Pods/
+
+# Android Studio
+/app/build/
+/captures/
+/gradle/
+/local.properties
+/app/.externalNativeBuild
+
+# General
+.DS_Store
+*.iml
+.idea/
