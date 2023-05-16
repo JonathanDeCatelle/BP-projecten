@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "35315700361",
+    "project_id": "bp-jonathan-a8ebf",
+    "storage_bucket": "bp-jonathan-a8ebf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35315700361:android:be9b4496f573f4272aec58",
+        "android_client_info": {
+          "package_name": "com.audioenvideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35315700361-bkg8j7bokrve1c0t4lqdf4jslgriv8gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszHdUV4neGOI6775jeEY_xD9EoYVYuh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35315700361-bkg8j7bokrve1c0t4lqdf4jslgriv8gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35315700361:android:71ad7a35b323e61d2aec58",
+        "android_client_info": {
+          "package_name": "com.example.notificaties"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35315700361-bkg8j7bokrve1c0t4lqdf4jslgriv8gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszHdUV4neGOI6775jeEY_xD9EoYVYuh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35315700361-bkg8j7bokrve1c0t4lqdf4jslgriv8gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35315700361:android:a56005b8a7dd6b9b2aec58",
+        "android_client_info": {
+          "package_name": "com.notificaties"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35315700361-bkg8j7bokrve1c0t4lqdf4jslgriv8gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszHdUV4neGOI6775jeEY_xD9EoYVYuh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35315700361-bkg8j7bokrve1c0t4lqdf4jslgriv8gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35315700361:android:b3d88b7b366650cd2aec58",
+        "android_client_info": {
+          "package_name": "com.sensoren"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35315700361-bkg8j7bokrve1c0t4lqdf4jslgriv8gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszHdUV4neGOI6775jeEY_xD9EoYVYuh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35315700361-bkg8j7bokrve1c0t4lqdf4jslgriv8gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
