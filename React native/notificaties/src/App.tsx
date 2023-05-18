@@ -1,19 +1,45 @@
-/**
- * Notificaties applicatie
- * Bachelorproef Jonathan De Catelle 2022-2023
- *
- * @format
- */
+import { Button, SafeAreaView, StyleSheet, Text, TextInput } from 'react-native';
+import React, { useEffect, useState } from 'react';
 
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import { createNotification } from './notifications/create';
+import { notificationsSetup } from './notifications/setup';
+import perf from '@react-native-firebase/perf';
 
-import React from 'react';
+const App = () => {
+  const [title, setTitle] = useState<string>('');
+  const [body, setBody] = useState<string>('');
 
-function App(): JSX.Element {
+  const sendNotification = async (title: string, body: string) => {
+    const trace = await perf().startTrace('createNotification');
+    await createNotification(title, body);
+    await trace.stop();
+    setTitle('');
+    setBody('');
+  };
 
+  useEffect(() => {
+    notificationsSetup();
+  }, []);
+  
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Notificaties</Text>
+      <Text style={styles.title}>Notificatie aanmaken</Text>
+      <TextInput 
+        placeholder="Title" 
+        onChangeText={(text) => setTitle(text)}
+        value={title}
+        style={styles.textInput}
+        />
+      <TextInput 
+        placeholder="Body" 
+        onChangeText={(text) => setBody(text)}
+        value={body}
+        style={styles.textInput}
+        />
+      <Button
+        title="Verstuur notificatie"
+        onPress={() => sendNotification(title, body)}
+      />
     </SafeAreaView>
   );
 }
@@ -23,6 +49,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  title: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  textInput:{
+    width: 200,
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    borderRadius: 5,
+    marginBottom: 20,
   },
 });
 
