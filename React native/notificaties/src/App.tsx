@@ -13,8 +13,6 @@ const App = () => {
     const trace = await perf().startTrace('createNotification');
     await createNotification(title, body);
     await trace.stop();
-    setTitle('');
-    setBody('');
   };
 
   useEffect(() => {
@@ -25,13 +23,13 @@ const App = () => {
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Notificatie aanmaken</Text>
       <TextInput 
-        placeholder="Title" 
+        placeholder="Titel" 
         onChangeText={(text) => setTitle(text)}
         value={title}
         style={styles.textInput}
         />
       <TextInput 
-        placeholder="Body" 
+        placeholder="Beschrijving" 
         onChangeText={(text) => setBody(text)}
         value={body}
         style={styles.textInput}
