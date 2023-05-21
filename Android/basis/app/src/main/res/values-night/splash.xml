@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApp.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/bank_svgrepo_com</item>
+        <item name="postSplashScreenTheme">@style/Theme.Basis</item>
+    </style>
+
+</resources>
