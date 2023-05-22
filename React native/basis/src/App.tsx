@@ -1,13 +1,18 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import ThirdScreen from './screens/ThirdScreen';
+import React, { useEffect } from 'react';
+
 import HomeScreen from './screens/HomeScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import RNBootSplash from "react-native-bootsplash";
 import SecondScreen from './screens/SecondScreen';
+import ThirdScreen from './screens/ThirdScreen';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
 
 const App = () => {
+  useEffect(() => {
+    RNBootSplash.hide();
+  }, []);
   return (
     <NavigationContainer>
       <Tab.Navigator>
